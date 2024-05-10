@@ -1,0 +1,70 @@
+/*Default Styling*/
+html {
+    background-color: khaki;
+}
+
+/*If screen wider than 600px*/
+@media screen and (min-width: 600px) {
+    html {
+        background-color: gray;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    html {
+        background-color: rgb(28, 155, 51);
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    html {
+        background-color: rgb(88, 22, 22);
+    }
+}
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+    .main {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 400px);
+        gap: 100px;
+        justify-content: center;
+    }
+}
+
+.content-section {
+
+    background-color: rgb(24, 82, 148);
+    padding: 10px 20px;
+    border-radius: 2em;
+    min-height: 300px;
+    max-width: 400px;
+    font-size: 1vw;
+    padding: 1em 2em;
+}
+
+.content-image {
+    width: 100%;
+}
+
+.content-title {
+    text-align: center;
+    font-size: 4vw;
+}
+
+.content-details {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .content-details {
+        display: block;
+    }
+}
+
